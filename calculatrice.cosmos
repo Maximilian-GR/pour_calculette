@@ -1,0 +1,269 @@
+Auteur: pj62kbh
+Date: 28.10.2024
+Entreprise: DGEP
+Description: calculatrice
+
+Voici les ordres du programme calculatrice  :
+	//Ajoutez ici vos ordres, par exemple : Afficher "Bonjour Cosmos".
+	
+	Créer une zone mémoire #reponse.
+	Créer une zone mémoire #texteReponse avec le texte "\nVotre reponse: ".
+	
+		Créer une zone mémoire #resultat.
+		Créer une zone mémoire #reponse1.
+		Créer une zone mémoire #reponse2.
+		Créer une zone mémoire #texteMemoire.
+		Créer une zone mémoire #memoire.
+		
+			Créer une zone mémoire #continuer.
+			#continuer = "oui".
+	
+	Afficher "Bonjour et bienvenu dans la calculatrice.\n\n".
+	
+			//répétition là en locurrence escape ne marchera pas (psq il faut utilisé #touchePresse) est différent de "Escape"
+			Répéter tant que #continuer == "oui"
+			
+	
+	Afficher "Veuillez choisir l'opération que vous souhaitez réaliser : \n\n".
+
+	Afficher "addition:1		soustraction: 2 \n".
+	Afficher "multiplication: 3	division: 4 \n".
+	Afficher "racine: 5	puissance: 6 \n".
+	Afficher "pourcent: 7 \n".
+
+	Afficher "#texteReponse".
+
+	
+	Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+	
+	
+		
+		
+			
+		
+				//addition
+				
+				Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à 1 alors 
+					Afficher "Veuillez afficher votre premier chiffre (ou mémoire): ".
+					Afficher "#texteReponse".
+					Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse1.
+					Si #reponse1 est égal à "mémoire" alors
+						Copier la valeur de #memoire dans #reponse1.
+					?
+					
+					Afficher "Veuillez afficher votre deuxième chiffre: ".
+					Afficher "#texteReponse".
+					Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse2.
+					
+					#resultat = #reponse1 + #reponse2.
+					
+					Afficher "Votre calcul: #reponse1 + #reponse2 = #resultat".
+					
+					
+					//mémoire
+		
+					Afficher "\n\nVoullez-vous stocker cette valeur en mémoire?\n".
+					Récupérer la saisie et la stocker dans la zone mémoire nommée #texteMemoire.
+					Si la valeur enregistrée dans la zone mémoire nommée #texteMemoire est égale à "oui" alors 
+						Copier #resultat dans la zone mémoire nommée #memoire.
+				
+						
+					?
+						
+						
+
+					
+				?
+				
+					//soustraction
+					
+					Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à 2 alors  
+						Afficher "Veuillez afficher votre premier chiffre (ou mémoire): ".
+						Afficher "#texteReponse".
+						Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse1.
+						Si #reponse1 est égal à "mémoire" alors
+							Copier la valeur de #memoire dans #reponse1.
+						?
+						
+						Afficher "Veuillez afficher votre deuxième chiffre: ".
+						Afficher "#texteReponse".
+						Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse2.
+						
+						#resultat = #reponse1 - #reponse2.
+						
+						Afficher "Votre calcul: #reponse1 - #reponse2 = #resultat".
+						
+						//mémoire
+		
+						Afficher "\n\nVoullez-vous stocker cette valeur en mémoire?\n".
+						Récupérer la saisie et la stocker dans la zone mémoire nommée #texteMemoire.
+						Si la valeur enregistrée dans la zone mémoire nommée #texteMemoire est égale à "oui" alors 
+							Copier #resultat dans la zone mémoire nommée #memoire.
+					
+							
+						?
+						
+						//multiplication
+						
+						sinon si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à 3 alors  
+							Afficher "Veuillez afficher votre premier chiffre (ou mémoire): ".
+							Afficher "#texteReponse".
+							Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse1.
+							Si #reponse1 est égal à "mémoire" alors
+								Copier la valeur de #memoire dans #reponse1.
+							?
+							
+							Afficher "Veuillez afficher votre deuxième chiffre: ".
+							Afficher "#texteReponse".
+							Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse2.
+							
+							#resultat = #reponse1 * #reponse2.
+							
+							Afficher "Votre calcul: #reponse1 * #reponse2 = #resultat".
+							
+							//mémoire
+		
+							Afficher "\n\nVoullez-vous stocker cette valeur en mémoire?\n".
+							Récupérer la saisie et la stocker dans la zone mémoire nommée #texteMemoire.
+							Si la valeur enregistrée dans la zone mémoire nommée #texteMemoire est égale à "oui" alors 
+								Copier #resultat dans la zone mémoire nommée #memoire.
+						
+								
+							?
+					?
+							
+							//division
+					
+							Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à 4 alors  
+								Afficher "Veuillez afficher votre premier chiffre (ou mémoire): ".
+								Afficher "#texteReponse".
+								Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse1.
+								Si #reponse1 est égal à "mémoire" alors
+									Copier la valeur de #memoire dans #reponse1.
+								?
+								
+								Afficher "Veuillez afficher votre deuxième chiffre: ".
+								Afficher "#texteReponse".
+								Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse2.
+								
+								#resultat = #reponse1 / #reponse2.
+								
+								Afficher "Votre calcul: #reponse1 / #reponse2 = #resultat".
+								
+								//mémoire
+		
+								Afficher "\n\nVoullez-vous stocker cette valeur en mémoire?\n".
+								Récupérer la saisie et la stocker dans la zone mémoire nommée #texteMemoire.
+								Si la valeur enregistrée dans la zone mémoire nommée #texteMemoire est égale à "oui" alors 
+									Copier #resultat dans la zone mémoire nommée #memoire.
+							
+									
+								?
+							?
+							
+								//racine
+								
+								Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à 5 alors  
+									Afficher "Veuillez afficher votre jolie chiffre (ou mémoire): ".
+									Afficher "#texteReponse".
+									Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse1.
+									Si #reponse1 est égal à "mémoire" alors
+										Copier la valeur de #memoire dans #reponse1.
+									?
+										
+									#resultat = racine carrée de #reponse1.
+									
+									Afficher "Votre calcul: racine carrée de #reponse1 = #resultat".
+									
+									//mémoire
+		
+									Afficher "\n\nVoullez-vous stocker cette valeur en mémoire?\n".
+									Récupérer la saisie et la stocker dans la zone mémoire nommée #texteMemoire.
+									Si la valeur enregistrée dans la zone mémoire nommée #texteMemoire est égale à "oui" alors 
+										Copier #resultat dans la zone mémoire nommée #memoire.
+								
+										
+									?
+								?
+								
+									//Puissance
+									
+									Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à 6 alors  
+										Afficher "Veuillez afficher votre premier chiffre (ou mémoire): ".
+										Afficher "#texteReponse".
+										Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse1.
+										Si #reponse1 est égal à "mémoire" alors
+											Copier la valeur de #memoire dans #reponse1.
+										?
+										
+										Afficher "Veuillez afficher votre deuxième chiffre (la puissance): ".
+										Afficher "#texteReponse".
+										Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse2.
+										
+										#resultat = #reponse1 élevé à la puissance #reponse2.
+										
+										Afficher "Votre calcul: #reponse1 élevé à la puissance #reponse2 = #resultat".
+										
+										//mémoire
+		
+										Afficher "\n\nVoullez-vous stocker cette valeur en mémoire?\n".
+										Récupérer la saisie et la stocker dans la zone mémoire nommée #texteMemoire.
+										Si la valeur enregistrée dans la zone mémoire nommée #texteMemoire est égale à "oui" alors 
+											Copier #resultat dans la zone mémoire nommée #memoire.
+									
+											
+										?
+									?
+										//racine
+								
+										Si la valeur enregistrée dans la zone mémoire nommée #reponse est égale à 7 alors  
+											Afficher "Veuillez afficher votre jolie chiffre (ou mémoire): ".
+											Afficher "#texteReponse".
+											Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse1.
+											Si #reponse1 est égal à "mémoire" alors
+												Copier la valeur de #memoire dans #reponse1.
+											?
+											
+											#resultat = #reponse1 / 100.
+											
+											Afficher "Votre calcul: #reponse1 / 100 = #resultat".
+											
+											//mémoire
+		
+											Afficher "\n\nVoullez-vous stocker cette valeur en mémoire?\n".
+											Récupérer la saisie et la stocker dans la zone mémoire nommée #texteMemoire.
+											Si la valeur enregistrée dans la zone mémoire nommée #texteMemoire est égale à "oui" alors 
+												Copier #resultat dans la zone mémoire nommée #memoire.
+										
+												
+											?
+										?
+										
+			Afficher "Voulez-vous continuer? \n".
+			Récupérer la saisie et la stocker dans #continuer.
+			>>
+Fin de la transmission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
